@@ -29,5 +29,12 @@ Guard
     add guard and spring to gemfile
     $ guard init rspec
     this adds a new guard file
-    modify the Guardfile cmd: "bin/rspec"
+    modify the Guardfile cmd: "rspec"
+    $ guard
+    has guard running, leave running in cmd line
+Add more validations
+    create featurs in spec
+    create create logic in controller
+    create validates in model
+    run guard until it works
     
