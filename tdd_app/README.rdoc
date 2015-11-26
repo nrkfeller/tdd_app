@@ -21,4 +21,5 @@ Article specs
     modify view and attemp to emulate user behavior
 Front end
     add gem bootstrap and autoprefixer
-    
+    application.html.erb styling
+Build all the stuff for the testing to work
