@@ -19,4 +19,6 @@ Article specs
     fix routing in route.rb
     create controller (notice this has created rspec test)
     modify view and attemp to emulate user behavior
+Front end
+    add gem bootstrap and autoprefixer
     
