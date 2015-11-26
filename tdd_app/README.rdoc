@@ -23,3 +23,11 @@ Front end
     add gem bootstrap and autoprefixer
     application.html.erb styling
 Build all the stuff for the testing to work
+Guard
+    guard automatically runs rspec
+    create branch
+    add guard and spring to gemfile
+    $ guard init rspec
+    this adds a new guard file
+    modify the Guardfile cmd: "bin/rspec"
+    
