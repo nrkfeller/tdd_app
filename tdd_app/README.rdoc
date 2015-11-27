@@ -37,4 +37,10 @@ Add more validations
     create create logic in controller
     create validates in model
     run guard until it works
+Update to guardfile
+We need the guard to track changes in controllers,view,routes and models
+    watch(%r{^app/controllers/(.+)_(controller)\.rb$})  { "spec/features" }
+    watch(%r{^app/models/(.+)\.rb$})  { "spec/features" }
+    watch(rails.view_dirs)     { "spec/features" } # { |m| rspec.spec.("features/#{m[1]}") }
+    watch(rails.routes)          { "spec" } # { "#{rspec.spec_dir}/routing" }
     
