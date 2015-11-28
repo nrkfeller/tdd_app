@@ -49,4 +49,5 @@ WORKFLOW
 2. definte user behavior: before and scenario
     visit, click_link, fill_in, click_button, expect(page)
 3. Modify controller, views, models, until tests pass
-    
+
+ADDING USERS (devise)
