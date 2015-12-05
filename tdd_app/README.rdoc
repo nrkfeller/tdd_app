@@ -67,3 +67,5 @@ generate comments model
 Add dependences to user, articles and comments models
 Nest routes in route.rb
 Generate comment controller and write create logic, related to article
+
+ONLY USERS CAN COMMENT
