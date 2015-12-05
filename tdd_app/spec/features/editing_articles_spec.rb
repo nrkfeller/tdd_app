@@ -4,18 +4,13 @@ require 'rails_helper'
 RSpec.feature "Editing articles" do
     
     before do
-        @article = Article.create(title: 'First Article', body: 'First article body')
-        @nick = User.create!(email: "me@nicolafeller.com", password: "password")
+        nick = User.create!(email: "me@nicolafeller.com", password: "password")
+        login_as(nick)
+        @article = Article.create(title: 'First Article', body: 'First article body', user: nick)
     end
     
     scenario "User can edit articles" do
         visit "/"
-        
-        click_link "Sign In"
-        fill_in "Email", with: @nick.email
-        fill_in "Password", with: @nick.password
-        click_button "Log in"
-        
         click_link @article.title
         click_link "Edit Article"
         
@@ -30,11 +25,6 @@ RSpec.feature "Editing articles" do
     
     scenario "A user fails to update and article" do
         visit "/"
-        
-        click_link "Sign In"
-        fill_in "Email", with: @nick.email
-        fill_in "Password", with: @nick.password
-        click_button "Log in"
         
         click_link @article.title
         click_link "Edit Article"

@@ -50,4 +50,20 @@ WORKFLOW
     visit, click_link, fill_in, click_button, expect(page)
 3. Modify controller, views, models, until tests pass
 
-ADDING USERS (devise)
+CONTROLLER TESTING
+1. in specs
+    mkdir support
+    in support create file macros.rb - fill in with macros
+2. in specs/controller/articles_controller_spec.rb
+    require 'support/macros.rb
+    describe "GET #edit"
+    create contexts for accessing template via controller
+    
+CREATING COMMENTS
+Put html code in the view/articles/show
+Write logic in articles controller
+generate comments model
+    $ rails g model comment body:text article:references user:references
+Add dependences to user, articles and comments models
+Nest routes in route.rb
+Generate comment controller and write create logic, related to article
